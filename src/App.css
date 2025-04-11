@@ -1,0 +1,65 @@
+/* Make the whole app full-screen */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+/* Main container layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1e1e2f;
+  color: white;
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Layout for sidebar and whiteboard */
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Whiteboard area */
+.whiteboard {
+  flex: 1;
+  background-color: white;
+  position: relative;
+}
+
+/* Reuse or remove unused old styles */
+.logo {
+  display: none;
+}
+
+.card, .read-the-docs {
+  display: none;
+}
+
+.drawing-canvas {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  cursor: crosshair;
+  display: block;
+}
